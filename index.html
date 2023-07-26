@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse</title>
+    <link rel="stylesheet" href="./CSS_files/style.css">
+    <link rel="stylesheet" href="./CSS_files/banner.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> -->
+</head>
+
+<body onload="myfun()">
+    <div class="container">
+        <div class="navbar">
+            <div class="nav_con">
+                <img id="logo" src="./Images/logo.png" alt="logo">
+                <input type="search" id="search" placeholder="Search Movies here...">
+            </div>
+            <img id="toggle_sidebar" src="./Images/Bar_image.png" alt="toggle">
+        </div>
+        <div class="minicontainer">
+            <div class="sidebar">
+                <h4 id="gen">Genre</h4>
+                <ul id="gen-list">
+                    <!-- li template clones will apend here -->
+                </ul>
+            </div>
+            <div class="banner">
+                <ul class="inner_navbar">
+                    <li class="inner_li">Top-Rated</li>
+                    <li class="inner_li">Popular</li>
+                    <li class="inner_li">Latest</li>
+                </ul>
+                <div class="main"></div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="about-me">
+                <h3>About me</h3>
+                <p>Sumit Tupe</p>
+                <p>Final Year Student of Bachlor of Engineering</p>
+                <div class="mail">
+                    <img src="./Images/envelope-at-fill.svg" alt="mail img">
+                    <p>sumittupe9623@gmail.com</p>
+                </div>
+            </div>
+            <div class="join-me">
+                <h3>Links</h3>
+                <div class="links">
+                    <img src="./Images/linkedin.svg" alt="linked in">
+                    <a href="https://www.linkedin.com/in/sumit-tupe-8027a0241/">Linked In</a>
+                </div>
+                <div class="links">
+                    <img src="./Images/github.svg" alt="git hub">
+                    <a href="https://github.com/Sumit9623">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <template>
+        <li class="genre_li"></li>
+    </template>
+    <template>
+        <div class="card">
+            <div class="movie-details">
+                <h4 class="movie-title"></h4>
+                <ul class="movie-gen-list">
+                    <!--  add li elemets usong templates -->
+                </ul>
+            </div>
+        </div>
+    </template>
+    <script src="./Script_files/main_load.js"></script>
+    <script src="./Script_files/get_genre_list.js"></script>
+    <script src="./Script_files/get_search.js"></script>
+    <script src="./Script_files/nav_links.js"></script>
+    <!-- <script src="get_movies_with_genre.js"></script> -->
+</body>
+
+</html>
