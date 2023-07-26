@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse</title>
+    <link rel="stylesheet" href="./CSS_files/style.css">
+    <link rel="stylesheet" href="./CSS_files/movie_detail_gen.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="nav_con">
+                <img id="logo" src="./Images/logo.png" alt="logo">
+                <!-- <input type="search" id="search" placeholder="Search Movies here..."> -->
+            </div>
+            <img id="toggle_sidebar" src="./Images/Bar_image.png" alt="toggle">
+        </div>
+        <div class="minicontainer">
+             <div class="main_movie_detail">
+                <div class="details">
+                    <div class="text-details">
+                        <h2 id="movie-title">Title</h2>
+                        <p id="movie-tag-line">Tag line</p>
+                        <p id="movie-release-date">Release date</p>
+                        <p id="movie-rating">rating</p>
+                        <p id="movie-watch-time">watch time</p>
+                        <ul id="movie-gen-list">
+                            <!--  add li elemets usong templates -->
+                        </ul>
+                        <h4 id="movie-overview-head">Overview</h4>
+                        <p id="movie-overview">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, voluptate.</p>
+                        <a id="movie-watch-now"><button >Watch Now</button></a>
+                        <h3 id="movie-videos-head">Trailer</h3>
+                        <div id="movie-videos">
+                            <!-- video templates -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="about-me">
+                <h3>About me</h3>
+                <p>Sumit Tupe</p>
+                <p>Final Year Student of Bachlor of Engineering</p>
+                <div class="mail">
+                    <img src="./Images/envelope-at-fill.svg" alt="mail img">
+                    <p>sumittupe9623@gmail.com</p>
+                </div>
+            </div>
+            <div class="join-me">
+                <h3>Links</h3>
+                <div class="links">
+                    <img src="./Images/linkedin.svg" alt="linked in">
+                    <a href="https://www.linkedin.com/in/sumit-tupe-8027a0241/">Linked In</a>
+                </div>
+                <div class="links">
+                    <img src="./Images/github.svg" alt="git hub">
+                    <a href="https://github.com/Sumit9623">GitHub</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <template id="temp">
+        <li></li>
+    </template>
+    <template id="video_temp">
+        <iframe id="video_frame" width="300" height="200" frameborder="0" allowfullscreen="1" loading="lazy"
+        ></iframe>
+    </template>
+    <script src="./Script_files/get_genre_list.js"></script>
+    <script src="./Script_files/display_movie_details.js"></script>
+
+</body>
+</html>
