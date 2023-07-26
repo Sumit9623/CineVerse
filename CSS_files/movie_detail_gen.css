@@ -1,0 +1,98 @@
+.main_movie_detail{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.main_movie_detail .details{
+    background: linear-gradient(138deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,0.6643907563025211) 49%, rgba(0,0,0,0.4459033613445378) 79%, rgba(0,0,0,0.21060924369747902) 99%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height:max-content;
+    display: flex;
+    flex-direction: column;
+}
+.details .text-details{
+    display: flex;
+    flex-direction: column;
+
+}
+.text-details #movie-title{
+    font-size: 6rem;
+    color: white;
+    margin-bottom: 4px;
+}
+.text-details #movie-overview-head, #movie-videos-head, #movie-tag-line{
+    font-size: 2rem;
+    color: rgb(205, 203, 203);
+    margin-bottom: 6px;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.text-details #movie-release-date,#movie-rating,#movie-overview, #movie-watch-time{
+    font-size: 1.7rem;
+    color: gray;
+    margin-left: 10px;
+}
+.text-details #movie-gen-list{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.text-details #movie-gen-list li{
+    color: white;
+    font-size: 1.6rem;
+    width: fit-content;
+    padding: 6px;
+    border-radius: 6px;
+    margin-left: 10px;
+    margin-top: 6px;
+    background-color: gray;
+}
+.text-details button{
+    width: 140px;
+    height: 35px;
+    background-color: rgb(187, 1, 1);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.detail-gen-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    list-style: none;
+    gap: 10px;
+    justify-content:flex-start;
+}
+.detail-gen-list li{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 5px;
+    background-color: #1f1f1f;
+}
+#movie-videos{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    gap: 6px;
+    padding: 6px;
+    overflow: scroll;
+    width: 90vw;
+}
+#movie-videos iframe{
+    border-radius: 10px;
+}
